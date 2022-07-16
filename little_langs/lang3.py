@@ -76,7 +76,7 @@ def parse_plus_integer_or_variable(expr):
         integers_or_variables = expr.split("+")
         parsed_integers_or_variables = [parse_integer_or_variable(x) for x in integers_or_variables]
         if len(parsed_integers_or_variables) == 1:
-            raise ValueError(f"found a + with only one a left-hand-side? {expr}")
+            raise ValueError(f"found a + with only a left-hand-side? {expr}")
 
         one_or_more_plusses = Plus(parsed_integers_or_variables[0], parsed_integers_or_variables[1])
         for integer_or_variable in parsed_integers_or_variables[2:]:
@@ -119,6 +119,9 @@ assert interpret(parse("""x = 3
 y = 4
 z = x + y
 z + z + z""")) == 21
+assert interpret(parse("""x = 3
+x = 15
+x + x""")) == 30
 
 
 def parse_and_interpret(s):
