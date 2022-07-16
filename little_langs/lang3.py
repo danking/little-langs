@@ -9,7 +9,7 @@ from .lang3_ast import Int, Plus, Let, Ref, interpret
 # punctuation, etc. Our classes thus far, Int, Plus, Let, and Ref, are usually called "abstract
 # syntax" or "AST nodes".
 #
-# Converting a syntax to an abstract syntax is called "parsing" and its one of the hardest parts of
+# Converting syntax into abstract syntax is called "parsing" and its one of the hardest parts of
 # writing a new language!
 #
 # Let's write a very simple syntax for our language:
