@@ -5,7 +5,7 @@ from .lang3_ast import Int, Plus, Let, Ref, interpret
 # You're probably thinking: hey dan, this isn't a "programming" langauge, its just some Python
 # classes. I disagree, but you probably would be happier if our progrmming language had syntax.
 #
-# A "syntax" [1] refers to the representation of our language in text: letters, numbers, spaces,
+# A "syntax" refers to the representation of our language in text: letters, numbers, spaces,
 # punctuation, etc. Our classes thus far, Int, Plus, Let, and Ref, are usually called "abstract
 # syntax" or "AST nodes".
 #
